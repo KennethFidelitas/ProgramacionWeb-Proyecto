@@ -10,28 +10,27 @@
             @* ── PANEL IZQUIERDO: showcase ── *@
             <div class="col-lg-6">
                 <div class="auth-showcase">
-                    <span class="auth-kicker">Account recovery</span>
-                    <h1>Recover your account in seconds.</h1>
+                    <span class="auth-kicker">Recuperación de cuentas</span>
+                    <h1>Recupera tu cuenta en segundos.</h1>
                     <p>
-                        Enter your email and we'll send you a secure link to reset
-                        your password and get back to shopping right away.
+                        Introduce tu correo electrónico y te enviaremos un enlace seguro para restablecer tu contraseña y volver a comprar de inmediato.
                     </p>
 
                     <div class="auth-feature-grid">
                         <div class="auth-feature-box">
-                            <h3>Secure reset</h3>
-                            <p>Your link expires in 30 minutes for your protection.</p>
+                            <h3>Restablecimiento seguro</h3>
+                            <p>Su enlace caduca en 30 minutos para su protección.</p>
                         </div>
                         <div class="auth-feature-box">
-                            <h3>Quick access</h3>
-                            <p>Back to your orders and wishlist in no time.</p>
+                            <h3>Acceso rápido</h3>
+                            <p>Volverás a tus pedidos y lista de deseos enseguida.</p>
                         </div>
                     </div>
 
                     <div class="auth-showcase-panel">
-                        <span class="auth-panel-label">Security tip</span>
-                        <strong>Never share your reset link</strong>
-                        <p>MiniStore will never ask for your password or link via email or chat.</p>
+                        <span class="auth-panel-label">Consejo de seguridad</span>
+                        <strong>Nunca compartas tu enlace de restablecimiento</strong>
+                        <p>MiniStore nunca te pedirá tu contraseña ni tu enlace por correo electrónico o chat.</p>
                     </div>
                 </div>
             </div>
@@ -40,20 +39,20 @@
             <div class="col-lg-6">
                 <div class="auth-form-panel">
                     <div class="auth-form-header">
-                        <span class="auth-form-kicker">Password reset</span>
-                        <h2>Forgot your password?</h2>
-                        <p>Enter the email linked to your account and we'll send you the recovery link.</p>
+                        <span class="auth-form-kicker">Restablecimiento de contraseña</span>
+                        <h2>Olvidaste tu contraseña?</h2>
+                        <p>Introduce el correo electrónico asociado a tu cuenta y te enviaremos el enlace de recuperación.</p>
                     </div>
 
                     <form class="auth-form" asp-controller="Account" asp-action="RecuperarCuenta" method="post">
                         @Html.AntiForgeryToken()
 
                         <div class="auth-input-group">
-                            <label for="email">Email address</label>
+                            <label for="email">Correo electrónico</label>
                             <input id="email"
                                    name="email"
                                    type="email"
-                                   placeholder="name@example.com"
+                                   placeholder="nombre@ejemplo.com"
                                    required
                                    autocomplete="email" />
 
@@ -79,20 +78,20 @@
 
                         <button type="submit"
                                 class="btn btn-medium btn-dark text-uppercase btn-rounded-none auth-submit">
-                            Send reset link
+                            Enviar enlace de restablecimiento
                         </button>
                     </form>
 
                     <div class="auth-divider"><span>or</span></div>
 
                     <p class="auth-switch">
-                        Remember your password?
-                        <a asp-controller="Account" asp-action="Login">Back to login</a>
+                        Recuerdas tu contraseña?
+                        <a asp-controller="Account" asp-action="Login">Volver al inicio de sesión</a>
                     </p>
 
                     <p class="auth-switch">
-                        Don't have an account?
-                        <a asp-controller="Account" asp-action="Register">Create one</a>
+                        No tienes una cuenta?
+                        <a asp-controller="Account" asp-action="Register">Crea una</a>
                     </p>
                 </div>
             </div>
