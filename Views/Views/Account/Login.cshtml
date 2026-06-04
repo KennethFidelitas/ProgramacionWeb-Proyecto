@@ -1,0 +1,84 @@
+@{
+    Layout = "_MiniStoreAuthLayout";
+    ViewData["Title"] = "Login";
+}
+
+<section class="auth-shell">
+    <div class="container">
+        <div class="row align-items-center g-0 auth-card-wrap">
+            <div class="col-lg-6">
+                <div class="auth-showcase">
+                    <span class="auth-kicker">Welcome back</span>
+                    <h1>Sign in and keep shopping in style.</h1>
+                    <p>
+                        Access your wishlist, recent orders and featured drops with a screen that matches the MiniStore vibe.
+                    </p>
+
+                    <div class="auth-feature-grid">
+                        <div class="auth-feature-box">
+                            <h3>Fast checkout</h3>
+                            <p>Everything important just one tap away.</p>
+                        </div>
+                        <div class="auth-feature-box">
+                            <h3>Curated deals</h3>
+                            <p>Promos, launches and highlights in one place.</p>
+                        </div>
+                    </div>
+
+                    <div class="auth-showcase-panel">
+                        <span class="auth-panel-label">Member access</span>
+                        <strong>Exclusive launches every week</strong>
+                        <p>Clean, modern and fully aligned with the storefront experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="auth-form-panel">
+                    <div class="auth-form-header">
+                        <span class="auth-form-kicker">Account access</span>
+                        <h2>Login</h2>
+                        <p>Frontend only for now, ready to wire later.</p>
+                    </div>
+
+                    <form class="auth-form" action="#" method="post">
+                        <div class="auth-input-group">
+                            <label for="email">Email address</label>
+                            <input id="email" type="email" placeholder="name@example.com" />
+                        </div>
+
+                        <div class="auth-input-group">
+                            <div class="auth-label-row">
+                                <label for="password">Password</label>
+                                <a href="#">Forgot password?</a>
+                            </div>
+                            <input id="password" type="password" placeholder="Enter your password" />
+                        </div>
+
+                        <div class="auth-options">
+                            <label class="auth-check">
+                                <input type="checkbox" />
+                                <span>Keep me signed in</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-medium btn-dark text-uppercase btn-rounded-none auth-submit">
+                            Sign in
+                        </button>
+                    </form>
+
+                    <div class="auth-divider"><span>or continue with</span></div>
+
+                    <div class="auth-socials">
+                        <a href="#" class="auth-social-btn">Google</a>
+                        <a href="#" class="auth-social-btn">Apple</a>
+                    </div>
+
+                    <p class="auth-switch">
+                        New here?
+                        <a href="/Account/Register">Create your account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
