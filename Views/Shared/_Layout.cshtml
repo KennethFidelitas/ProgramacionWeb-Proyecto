@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,11 +27,11 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
 
     @* =============================================
-       SVG SPRITE DEFINITIONS (iconos reutilizables)
+       SVG SPRITE DEFINITIONS
        ============================================= *@
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="search" viewBox="0 0 32 32">
-            <title>Search</title>
+            <title>Buscar</title>
             <path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
         </symbol>
         <symbol id="user" viewBox="0 0 16 16">
@@ -105,20 +105,20 @@
     <div class="search-popup">
         <div class="search-popup-container">
             <form asp-controller="Search" asp-action="Index" role="search" method="get" class="search-form">
-                <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" name="q" />
+                <input type="search" id="search-form" class="search-field" placeholder="Escribe y presiona enter" name="q" />
                 <button type="submit" class="search-submit">
                     <svg class="search"><use xlink:href="#search"></use></svg>
                 </button>
             </form>
-            <h5 class="cat-list-title">Browse Categories</h5>
+            <h5 class="cat-list-title">Explorar categorías</h5>
             <ul class="cat-list">
-                <li class="cat-list-item"><a href="#" title="Mobile Phones">Mobile Phones</a></li>
-                <li class="cat-list-item"><a href="#" title="Smart Watches">Smart Watches</a></li>
-                <li class="cat-list-item"><a href="#" title="Headphones">Headphones</a></li>
-                <li class="cat-list-item"><a href="#" title="Accessories">Accessories</a></li>
-                <li class="cat-list-item"><a href="#" title="Monitors">Monitors</a></li>
-                <li class="cat-list-item"><a href="#" title="Speakers">Speakers</a></li>
-                <li class="cat-list-item"><a href="#" title="Memory Cards">Memory Cards</a></li>
+                <li class="cat-list-item"><a href="#" title="Teléfonos móviles">Teléfonos móviles</a></li>
+                <li class="cat-list-item"><a href="#" title="Relojes inteligentes">Relojes inteligentes</a></li>
+                <li class="cat-list-item"><a href="#" title="Audífonos">Audífonos</a></li>
+                <li class="cat-list-item"><a href="#" title="Accesorios">Accesorios</a></li>
+                <li class="cat-list-item"><a href="#" title="Monitores">Monitores</a></li>
+                <li class="cat-list-item"><a href="#" title="Parlantes">Parlantes</a></li>
+                <li class="cat-list-item"><a href="#" title="Tarjetas de memoria">Tarjetas de memoria</a></li>
             </ul>
         </div>
     </div>
@@ -134,7 +134,7 @@
                 </a>
                 <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#bdNavbar"
-                        aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        aria-controls="bdNavbar" aria-expanded="false" aria-label="Alternar navegación">
                     <svg class="navbar-icon"><use xlink:href="#navbar-icon"></use></svg>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
@@ -143,39 +143,39 @@
                             <img src="~/images/main-logo.png" class="logo" alt="Ministore" />
                         </a>
                         <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
-                                aria-label="Close" data-bs-target="#bdNavbar"></button>
+                                aria-label="Cerrar" data-bs-target="#bdNavbar"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link me-4" asp-controller="Home" asp-action="Index">Home</a>
+                                <a class="nav-link me-4" asp-controller="Home" asp-action="Index">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="#company-services">Services</a>
+                                <a class="nav-link me-4" href="#company-services">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" asp-controller="Shop" asp-action="Index">Products</a>
+                                <a class="nav-link me-4" asp-controller="Shop" asp-action="Index">Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="#smart-watches">Watches</a>
+                                <a class="nav-link me-4" href="#smart-watches">Relojes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="#yearly-sale">Sale</a>
+                                <a class="nav-link me-4" href="#yearly-sale">Ofertas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link me-4" asp-controller="Blog" asp-action="Index">Blog</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown"
-                                   href="#" role="button" aria-expanded="false">Pages</a>
+                                   href="#" role="button" aria-expanded="false">Páginas</a>
                                 <ul class="dropdown-menu">
-                                    <li><a asp-controller="Account" asp-action="Login" class="dropdown-item">Login</a></li>
-                                    <li><a asp-controller="Account" asp-action="Register" class="dropdown-item">Register</a></li>
+                                    <li><a asp-controller="Account" asp-action="Login" class="dropdown-item">Iniciar sesión</a></li>
+                                    <li><a asp-controller="Account" asp-action="Register" class="dropdown-item">Registrarse</a></li>
                                     <li><a asp-controller="Blog" asp-action="Index" class="dropdown-item">Blog</a></li>
-                                    <li><a asp-controller="Shop" asp-action="Index" class="dropdown-item">Shop</a></li>
-                                    <li><a asp-controller="Cart" asp-action="Index" class="dropdown-item">Cart</a></li>
-                                    <li><a asp-controller="Checkout" asp-action="Index" class="dropdown-item">Checkout</a></li>
-                                    <li><a asp-controller="Contact" asp-action="Index" class="dropdown-item">Contact</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index" class="dropdown-item">Tienda</a></li>
+                                    <li><a asp-controller="Cart" asp-action="Index" class="dropdown-item">Carrito</a></li>
+                                    <li><a asp-controller="Checkout" asp-action="Index" class="dropdown-item">Pago</a></li>
+                                    <li><a asp-controller="Contact" asp-action="Index" class="dropdown-item">Contacto</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -221,8 +221,8 @@
                                 <img src="~/images/main-logo.png" class="logo" alt="Ministore" />
                             </a>
                             <p class="pt-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenean pharetra ligula sit amet mi fringilla, quis dapibus nunc aliquet.
+                                Tu tienda de tecnología en línea. Encontrá los mejores productos,
+                                ofertas y lanzamientos con una experiencia de compra simple y moderna.
                             </p>
                             <ul class="social-links d-flex list-unstyled">
                                 <li>
@@ -245,33 +245,33 @@
                     </div>
                     <div class="col-lg-2 col-sm-6 pb-3">
                         <div class="footer-menu text-uppercase">
-                            <h5 class="widget-title pb-2">Quick Links</h5>
+                            <h5 class="widget-title pb-2">Enlaces rápidos</h5>
                             <ul class="menu-list list-unstyled text-uppercase">
-                                <li class="menu-item pb-2"><a asp-controller="Home" asp-action="Index">Home</a></li>
-                                <li class="menu-item pb-2"><a asp-controller="Home" asp-action="About">About</a></li>
-                                <li class="menu-item pb-2"><a asp-controller="Shop" asp-action="Index">Shop</a></li>
-                                <li class="menu-item pb-2"><a asp-controller="Blog" asp-action="Index">Blogs</a></li>
-                                <li class="menu-item pb-2"><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                                <li class="menu-item pb-2"><a asp-controller="Home" asp-action="Index">Inicio</a></li>
+                                <li class="menu-item pb-2"><a asp-controller="Home" asp-action="About">Acerca de</a></li>
+                                <li class="menu-item pb-2"><a asp-controller="Shop" asp-action="Index">Tienda</a></li>
+                                <li class="menu-item pb-2"><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                                <li class="menu-item pb-2"><a asp-controller="Contact" asp-action="Index">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 pb-3">
                         <div class="footer-menu text-uppercase">
-                            <h5 class="widget-title pb-2">Help &amp; Info</h5>
+                            <h5 class="widget-title pb-2">Ayuda e información</h5>
                             <ul class="menu-list list-unstyled">
-                                <li class="menu-item pb-2"><a href="#">Track Your Order</a></li>
-                                <li class="menu-item pb-2"><a href="#">Returns Policies</a></li>
-                                <li class="menu-item pb-2"><a href="#">Shipping + Delivery</a></li>
-                                <li class="menu-item pb-2"><a asp-controller="Contact" asp-action="Index">Contact Us</a></li>
-                                <li class="menu-item pb-2"><a href="#">FAQs</a></li>
+                                <li class="menu-item pb-2"><a href="#">Rastrea tu pedido</a></li>
+                                <li class="menu-item pb-2"><a href="#">Políticas de devolución</a></li>
+                                <li class="menu-item pb-2"><a href="#">Envíos y entregas</a></li>
+                                <li class="menu-item pb-2"><a asp-controller="Contact" asp-action="Index">Contáctanos</a></li>
+                                <li class="menu-item pb-2"><a href="#">Preguntas frecuentes</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 pb-3">
                         <div class="footer-menu contact-item">
-                            <h5 class="widget-title text-uppercase pb-2">Contact Us</h5>
-                            <p>Do you have any queries or suggestions? <a href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a></p>
-                            <p>If you need support? Just give us a call. <a href="tel:+5511122233344">+55 111 222 333 44</a></p>
+                            <h5 class="widget-title text-uppercase pb-2">Contáctanos</h5>
+                            <p>¿Tenés alguna consulta o sugerencia? <a href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a></p>
+                            <p>¿Necesitás ayuda? Solo llamanos. <a href="tel:+5511122233344">+55 111 222 333 44</a></p>
                         </div>
                     </div>
                 </div>
@@ -286,16 +286,16 @@
             <div class="row d-flex flex-wrap justify-content-between">
                 <div class="col-md-4 col-sm-6">
                     <div class="Shipping d-flex">
-                        <p>We ship with:</p>
+                        <p>Enviamos con:</p>
                         <div class="card-wrap ps-2">
                             <img src="~/images/dhl.png" alt="DHL" />
-                            <img src="~/images/shippingcard.png" alt="Shipping" />
+                            <img src="~/images/shippingcard.png" alt="Envío" />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="payment-method d-flex">
-                        <p>Payment options:</p>
+                        <p>Opciones de pago:</p>
                         <div class="card-wrap ps-2">
                             <img src="~/images/visa.jpg" alt="Visa" />
                             <img src="~/images/mastercard.jpg" alt="Mastercard" />
@@ -305,7 +305,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="copyright">
-                        <p>© Copyright @DateTime.Now.Year MiniStore.</p>
+                        <p>© Derechos reservados @DateTime.Now.Year MiniStore.</p>
                     </div>
                 </div>
             </div>
